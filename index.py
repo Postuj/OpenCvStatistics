@@ -5,13 +5,13 @@ import pyautogui as pg
 width_img = 480
 height_img = 640
 
-# Cap init
+### Cap init
 cap = cv2.VideoCapture(0)
 cap.set(3, width_img)
 cap.set(4, height_img)
 
 
-# Load config
+### Load config
 if os.path.exists('./config/config.json'):
     print('Config found, loading...')
     with open('./config/config.json', 'r') as f:
@@ -22,22 +22,22 @@ else:
               "v_max": 101, "rois": [[358, 358, 80, 71], [251, 359, 83, 75]]}
 
 
-# Mask params setup
+### Mask params setup
 lower = np.array([config['h_min'], config['s_min'], config['v_min']])
 upper = np.array([config['h_max'], config['s_max'], config['v_max']])
 
 
-# ROI setup
+### ROI setup
 rl = config['rois'][0]
 rr = config['rois'][1]
 
 
-# Timers setup
+### Timers setup
 max_timer = 25
 current_timer = 25
 
 
-# Row gap setup
+### Row gap setup
 row_gap = 5
 
 
