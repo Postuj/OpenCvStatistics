@@ -6,7 +6,7 @@ To setup your project complete the following steps
 
 ## ROI setup
 
-To set up ROIs run this script and select where you want your ROIs to be (ROIs are places when your pen will be detected). You don't need those pink cards, they were there only for me to see where I've placed ROIs xD.
+To set up ROIs run this script and select where you want your ROIs to be (ROIs are places when your pen will be detected). You don't need those pink cards, they were there only for me to see where I've placed ROIs 🙂.
 ```
 python ./settings/roi_setter.py
 ```
